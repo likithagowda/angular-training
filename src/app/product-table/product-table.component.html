@@ -1,0 +1,17 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let category of categories">
+    <app-category-headings [category]="category"></app-category-headings>
+    <app-products [products]="productList[category]"></app-products>
+  </tr>
+</tbody>
+</table>
+
+
+

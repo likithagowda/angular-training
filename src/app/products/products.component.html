@@ -1,0 +1,6 @@
+<table style="width: 165%;">
+  <tr [ngClass]="product.stocked ? '' : 'empty'" *ngFor="let product of products">
+      <td>{{ product.name }}</td>
+      <td>{{ product.price }}</td>
+    </tr>
+  </table>

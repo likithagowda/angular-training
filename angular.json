@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -120,5 +121,8 @@
       }
     }
   },
-  "defaultProject": "mock-ui"
+  "defaultProject": "mock-ui",
+  "cli": {
+    "analytics": "de9352b6-84b1-49cc-96f1-db2289bd97b5"
+  }
 }

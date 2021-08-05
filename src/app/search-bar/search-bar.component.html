@@ -1,0 +1,11 @@
+<form>
+  <br>
+  <div class="col">
+    <input class="form-control form-control-sm" type="text" placeholder="Search..." [(ngModel)]="this.searchKeyword"
+    (ngModelChange)="removeNotInStock(checkbox)" [ngModelOptions]="{standalone: true}"/>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" (change)="removeNotInStock(checkbox)" #checkbox/>
+    <label class="form-check-label">Only show products in stock</label>
+  </div>
+</form>

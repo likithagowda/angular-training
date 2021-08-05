@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { products } from './products';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mock-ui';
+  public products = products;
+  public updatedProductsList = [];
+
+  onfilteredResult(filteredResult) {
+    this.updatedProductsList = filteredResult;
+  }
 }
