@@ -12,6 +12,6 @@ export class AppComponent {
   public updatedProductsList = [];
 
   onfilteredResult(filteredResult) {
-    this.updatedProductsList = filteredResult;
+    this.updatedProductsList = filteredResult ;
   }
 }
